@@ -9,6 +9,7 @@ const EditBlogPage = () => {
   const [blog, setBlog] = useState({ID:'', Title: '', Content: '', Tags: '' });
   const [error, setError] = useState('');
   const token = getToken();
+
   useEffect(() => {
     fetch(`http://localhost:8080/api/blog/${id}`, {
       method: 'GET',
@@ -97,7 +98,7 @@ const EditBlogPage = () => {
         </div>
 
         <button type="submit" >Update Blog</button>
-        <button type="submit" onClick={() => navigate('/myblogs')}>Go back</button>
+        <button type="button" onClick={() => navigate('/myblogs')}>Go back</button>
       </form>
     </div>
   );

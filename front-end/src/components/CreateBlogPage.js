@@ -40,7 +40,7 @@ const CreateBlogPage = () => {
           setContent('');
           setTags('');
 
-          navigate('/')
+          navigate('/myblogs')
         })
         .catch((error) => {
           console.error('Error creating blog:', error); // Handle errors

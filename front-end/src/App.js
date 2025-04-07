@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import DeleteBlogPage from './components/DeleteBlogPage';
 import BlogDetailPage from './components/BlogDetailPage';
 import MyBlogs from './components/MyBlogs';
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import Header from './layout/Header';
 import './static/master.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -20,7 +20,7 @@ function App() {
     const [error, setError] = useState(null);
     const [filteredBlogs, setFilteredBlogs] = useState([]);
 
-    const fetchBlogs = useCallback(() => {
+    const fetchBlogs = () => {
       fetch('http://localhost:8080/api/blog/all')
           .then((response) => {
             if (!response.ok) {
@@ -37,7 +37,7 @@ function App() {
             setError(error.message);
             setLoading(false);
           });
-    });
+    };
 
     useEffect(() => {
         fetchBlogs();
@@ -50,9 +50,7 @@ function App() {
         <Routes>
           <Route path="/" element={
             <HomePage
-              blogs={blogs}
               filteredBlogs={filteredBlogs}
-              setFilteredBlogs={setFilteredBlogs}
               loading={loading}
               error={error}
               fetchBlogs={fetchBlogs}

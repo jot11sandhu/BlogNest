@@ -318,7 +318,7 @@ body {
   .form-group input:focus,
   .form-group textarea:focus {
     outline: none;
-    border-color: #4caf50;
+    border-color: #7d7e7d;
     box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
   }
 
@@ -338,6 +338,23 @@ body {
   button[type="submit"]:hover {
     background-color: #899189; 
   }
+
+  button[type="button"] {
+    background-color: #c2c8c2;
+    padding: 12px 20px; 
+    border: none; 
+    border-radius: 6px; 
+    cursor: pointer;
+    font-size: 16px; 
+    width: 100%; 
+    box-sizing: border-box; 
+    margin: 10px 0; 
+    transition: background-color 0.3s ease;
+  }
+
+  button[type="button"]:hover {
+    background-color: #899189; 
+  }  
   /* Create blog page */
 
   /* This is for login page */
@@ -379,12 +396,12 @@ body {
   
   .auth-form input:focus {
     outline: none;
-    border-color: #4caf50;
+    border-color: #989898;
     box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
   }
   
   .auth-form button {
-    background-color: #4caf50;
+    background-color: #757875;
     color: white;
     padding: 12px;
     border: none;
@@ -396,7 +413,7 @@ body {
   }
   
   .auth-form button:hover {
-    background-color: #45a049;
+    background-color: #3a3e3a;
   }
   
   .error-message {
@@ -415,7 +432,7 @@ body {
   }
   
   .blog-title-link:hover {
-    color: #4caf50;
+    color: #686a68;
   }
 
   /*Blog title*/

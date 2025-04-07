@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../static/master.css'
 import { useEffect } from 'react';
 
-const HomePage = ({ blogs, filteredBlogs, setFilteredBlogs, loading, error, fetchBlogs }) => {
+const HomePage = ({ filteredBlogs, loading, error, fetchBlogs }) => {
   
   useEffect(() => {
     fetchBlogs(); 

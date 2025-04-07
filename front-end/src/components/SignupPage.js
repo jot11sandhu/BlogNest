@@ -91,6 +91,7 @@ const SignupPage = () => {
             placeholder="Password"
             value={formData.password}
             onChange={handleChange}
+            minLength={8}
             required
           />
         </div>
