@@ -29,6 +29,15 @@ npm install
 # Run 
 npm start
 
+#Dummy users
+
+Username                      Passsword
+alex.wilson@yahoo.com         password
+alex.johnson@gmail.com        password
+john.kate@yahoo.com           password
+alex.taylor@yahoo.com         password
+john.johnson@hotmail.com      password
+
 
 
 
